@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    padding: 0%;
+    background-image: url("../img/post-header.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body {
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgb(0, 1, 3), rgb(7, 0, 23), rgb(45, 0, 109),rgb(15, 0, 49));
+    position: relative;
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+
+h1 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: darkgray;
+    font-size: 3em; color: #fffdd9;
+    color: rgb(4, 126, 214);
+    -webkit-text-stroke: darkgray 2px;
+}
+
+header hr {
+    width: 100%;
+    height: 5px;
+    border: 0px;
+    background-color: darkgrey;
+}
+
+ form {
+    background-color: rgba(11, 137, 215, 0.211);
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.teste {
+    background-color: blanchedalmond;
+    margin-left: 0%;
+    margin-right: 2%;
+    border-radius: 30px;
+    min-width: 390px;
+    text-align: center;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+div input,
+div label {
+    display: block;
+}
+
+.title {
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.campo {
+    min-width: 30px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 700;
+}
+
+.spaceline {
+    padding-top: 10px;
+}

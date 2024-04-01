@@ -1,0 +1,52 @@
+footer {
+    width: 100%;
+    height: 190px;
+    background-color: black;
+}
+
+footer p {
+    margin: 0px 30px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer p {
+    line-height: 1;
+}
+
+footer p #ocult {
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+footer p #ocult q, span {
+    font-weight: 600;
+    color: #aaa;
+}
+
+footer p #ocult span {
+    font-weight: 800;
+}
+
+.footer-logo a{
+    width: 100%;
+}
+
+.footer-logo p{
+    text-align: center;
+}
+
+.footer-logo p a img{
+    display: inline-block;
+    width: 200px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}

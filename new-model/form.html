@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="shortcut icon" href="img/logoalienori.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles-form.css">
+</head>
+<body>
+    <!-- primeiro formulario -->
+    <!-- Metodo "post utilizado para enviar dados para uma outra pasta" -->
+    <header>
+        <h1>Bilheteria</h1>
+        <hr id="hr-title">
+    </header>       
+    <form action="register.php" method="post">
+        <div class="all"> 
+            <!-- 10 - fieldset e legend -->
+            <fieldset class="check" style="margin-left: 30px; margin-right: 30px;">
+                <legend class="spaceline" class="title">Preencha as suas  informações pessoais</legend>
+
+                <label class="title" for="f-name">Nome:</label>
+                <input class="campo" class="title" type="f-name" required>
+
+                <label class="title" for="l-name">Sobrenome:</label>
+                <input class="campo" class="title" type="l-name" required>
+
+                <label class="title" for="email-cadastro">Digite o email que deseja cadastrar</label>
+                <input style="min-width: 300px;" class="campo" class="title" type="email" name="email-cadastro" autocomplete="email" required>
+
+                <label class="title" for="cpf">CPF:</label>
+                <input class="campo" class="title" type="number" name="cpf" placeholder="12345678912" required>
+
+                <label class="title" for="endereco-cadastro">Digite o seu endereço:</label>
+                <input style="min-width: 300px;" class="campo" class="title" type="endereco" name="endereco-cadastro" autocomplete="endereco" required>
+
+                <label class="title" for="tel">telefone:</label>
+                <input class="campo" class="title" type="int" name="tel" autocomplete="tel-national" placeholder="619912341234" required>
+                
+                <div>
+                    <label class="title" for="gen">Qual seu gênero:</label>
+                    <select class="campo" class="title" name="gen">formação
+                        <option value="programador">Masculino</option>
+                        <option value="professor">Feminino</option>
+                    </select>
+                </div>
+                    
+                <label class="title" id="age" class="title" for="birthday">Data de nascimento:</label>
+                <input class="campo" class="title" type="date" name="birthday" required>
+                
+                <div class="check">
+                    <label class="title" for="password">Digite sua senha:</label>
+                    <input class="campo" class="title" type="password" name="password" required>
+                </div>
+
+            </fieldset>
+            <div class="check">
+                <label class="title" for="contract">Você aceita todos os termos do contrato?</label>
+                <select class="title" name="contract">
+                    <option value="sim">Sim</option>
+                    <option value="não" selected>Não</option>
+                </select>
+            </div>
+            <!-- TERMOS -->
+            <div>
+                <label for="confirm">TERMOS</label>
+                <p><small><span style="text-align: center; height: 20px; width: 363px; font: 0.5em sans-serif;">Ao enviar este formulário você concorda automaticamente em participar de uma entrevista."</span></small></p>
+            </div>
+            <!-- completar formulário -->
+            <div class="check">
+                <!-- Reset -->
+                <input style="display: inline-block;" type="reset" value="Limpar">
+                <!-- 5 - envio de form -->
+                <input style="display: inline-block;" type="submit" value="Enviar" class="enviar">
+            </div>
+        </form>
+    </div>
+   <!-- Metodo "get" do form é utilizado para receber ou buscar dados -->
+</body>
+</html>

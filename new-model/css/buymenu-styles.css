@@ -1,0 +1,40 @@
+/* buy menu */
+
+/* configuração font buy-menu */
+.buy-pass p {
+    font-family: "Raleway",sans-serif;
+}
+
+.buy-pass a {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    padding: 16px 10px;
+}
+
+/* configuração borda buy-menu */
+
+.buy-pass a {
+    border: 3px solid #780514;
+    border-radius: 15px;
+}
+
+.buy-pass a:hover {
+    color: #780514;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    background-color: #ddd;
+}
+
+.buy-pass a:visited {
+    border: 3px solid #780514;
+    border-radius: 15px;
+}
+
+.buy-pass a:visited:hover {
+    color: #780514;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    background-color: #ddd;
+}
