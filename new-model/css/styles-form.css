@@ -6,10 +6,6 @@
 header {
     width: 100%;
     padding: 0%;
-    background-image: url("../img/post-header.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 body {
