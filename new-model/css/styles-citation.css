@@ -1,11 +1,11 @@
 /* Citation styles */
 
 .bg-citation {
-    background-image: url("../img/post-header.png");
+    background-image: url("../img/post-header.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: center;
-    background-position-y: 30%;
+    background-position-y: 45%;
     background-size: cover;
 }
 
