@@ -54,14 +54,16 @@ ul.list-none {
 /* list form */
 
 #form {
-    margin: auto;
+    display: block;
+    max-width: 400px;
+    margin: 0px auto;
     margin-bottom: 20px;
-    width: 400px;
 }
 
 #form ul {
     display: block;
     width: 100%;
+    max-width: 400px;
     padding: 0px;
     text-align: center;
 }
