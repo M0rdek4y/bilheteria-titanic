@@ -17,6 +17,10 @@ body {
     color: white;
 }
 
+.all {
+    margin-bottom: 40px;
+}
+
 h1 {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: darkgray;
@@ -36,6 +40,7 @@ form {
     display: block;
     max-width: 800px;
     background-color: rgba(37, 40, 42, 0.843);
+    margin: 0px auto;
     padding-top: 10px;
     padding-bottom: 10px;
     border: 5px solid #00ffff90;
