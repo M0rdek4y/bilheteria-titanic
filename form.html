@@ -4,166 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
-    <link rel="shortcut icon" href="img/logoalienori.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/titanic-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles-menu.css">
+    <link rel="stylesheet" href="css/styles-citation-form.css">
     <link rel="stylesheet" href="css/styles-form.css">
+    <link rel="stylesheet" href="css/body-styles.css">
+    <link rel="stylesheet" href="css/footer-styles.css">
 </head>
 <body>
     <!-- primeiro formulario -->
     <!-- Metodo "post utilizado para enviar dados para uma outra pasta" -->
-    <header>
-        <hr id="hr-title">
-        <div class="testanu"></div>
-        <h1>Bilheteria</h2>
+    <header id="inicio">
+        <!-- Barra de navegação pelo site -->
+        <div class="nav-menu singlepage-nav">
+            <div class="nav-menu-inner-top">
+                <p><img src="img/logotipo-white.png" alt="logotipo-titanic"></p>
+                <ul class="nav-menu-inner">
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#embarque" id="nav-login">Embarque</a></li>
+                    <li><a href="index.html#contact-us">Contato</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <form action="register.php" method="post">
-        <div class="all"> 
-            <div class="initial">
-                <div>
-                    <label class="spaceline">Nome:</label>
-                    <br>
-                    <input class="campo" type="text" required>
-                </div>
-                <div>
-            <!-- 3 - imput -->
-                    <label class="spaceline" for="age">Idade:</label>
-                    <br>
-                    <input class="campo" type="text" name="age" placeholder="18" required>
+    <main>
+        <div class="bg-citation">
+            <div class="citation-title">
+                <!-- Título do site -->
+                <div class="citation-title-position">
+                    <h1 style="text-transform: uppercase;">Bilheteria</h1>
+                    <!-- Citação principal -->
+                    <blockquote>
+                        <q>A oitava maravilha do mundo!</q>
+                        <p>Pres. J. Bruce Ismay</p>
+                    </blockquote>
                 </div>
             </div>
-            <!-- 6 - select -->
-            <div>
-                <label class="spaceline" for="job">seleciona a sua profissão:</label>
-                <br>
-                <select name="job">formação
-                    <option value="programador">Programador</option>
-                    <option value="professor">Professor</option>
-                    <option value="tester">Tester/QA</option>
-                    <option value="devops">devops</option>
-                    <option value="frontend">Front-end</option>
-                    <option value="back-end">Back-end</option>
-                    <option value="fullstack">Full-stack</option>
-                    <option value="desempregado" selected>Desempregado</option>
-                </select>
-            </div>
-            <div>
-                <!-- 8 - múltiplas seleções -->
-                <label class="spaceline" for="education">Selecione seu nivel de escolaridade:</label>
-                <br>
-                <select name="education" multiple>
-                    <option value="infantil">Educação infantil</option>
-                    <option value="fundamental">Ensino Fundamental</option>
-                    <option value="medio" selected>Ensino Médio</option>
-                    <option value="graduado">Superior (Graduação)</option>
-                    <option value="posgraduado">Pós-graduação</option>
-                    <option value="mestrado">Mestrado</option>
-                    <option value="doutorado">Doutorado</option>
-                </select>
-            </div>
-            <div class="about">
-                <!-- 9 - textarea -->
-                <label class="spaceline" for="aboutu">Fale sobre você:</label>
-                <br>
-                <textarea id="textar" name="aboutu" rows="15" cols="40" placeholder="Diga um pouco sobre você..." required></textarea>
-            </div>
+        </div>
+    </main>
+    <div class="all"> 
+        <form action="register.php" method="post">
             <!-- 10 - fieldset e legend -->
+            <fieldset id="border-fset" class="check" style="margin-left: 30px; margin-right: 30px;">
+            <legend class="spaceline title">Preencha as suas  informações pessoais</legend>
+
+            <label class="title" for="f-name">Nome:</label>
+            <input class="campo" class="title" type="f-name" required>
+
+            <label class="title" for="l-name">Sobrenome:</label>
+            <input class="campo" class="title" type="l-name" required>
+
+            <label class="title" for="email-cadastro">email:</label>
+            <input style="min-width: 300px;" class="campo" class="title" type="email" name="email-cadastro" autocomplete="email" required>
+
+            <label class="title" for="cpf">CPF:</label>
+            <input class="campo" class="title" type="number" name="cpf" placeholder="12345678912" required>
+
+            <label class="title" for="endereco-cadastro">Digite o seu endereço:</label>
+            <input style="min-width: 300px;" class="campo" class="title" type="endereco" name="endereco-cadastro" autocomplete="endereco" required>
+
+            <label class="title" for="tel">telefone:</label>
+            <input class="campo" class="title" type="int" name="tel" autocomplete="tel-national" placeholder="619912341234" required>
+            
             <div>
-                <fieldset class="check" style="margin-left: 30px; margin-right: 30px;">
-                    <legend class="spaceline" class="title">Preencha as suas  informações pessoais</legend>
-                    <label class="title" for="f-name">Nome:</label>
-                    <input class="campo" class="title" type="f-name" required>
-                    <label class="title" for="l-name">Sobrenome:</label>
-                    <input class="campo" class="title" type="l-name" required>
-                    <label id="niver" class="title" for="birthday">Data de nascimento:</label>
-                    <input class="campo" class="title" type="date" name="birthday" required>
-                    <label class="title" for="cpf">CPF:</label>
-                    <input class="campo" class="title" type="number" name="cpf" placeholder="12345678912" required>
-                </fieldset>
+                <label class="title" for="gen">Qual seu gênero:</label>
+                <select class="campo" class="title" name="gen">formação
+                    <option value="programador">Masculino</option>
+                    <option value="professor">Feminino</option>
+                </select>
             </div>
-            <div class="check">
+                
+            <label class="title" id="age" class="title" for="birthday">Data de nascimento:</label>
+            <input class="campo" class="title" type="date" name="birthday" required>
+            
+            <div id="last-camp" class="check">
+                <label class="title" for="password">Digite sua senha:</label>
+                <input class="campo" class="title" type="password" name="password" required>
+            </div>
+
+            </fieldset>
+            <div id="option-contract" class="check">
                 <label class="title" for="contract">Você aceita todos os termos do contrato?</label>
                 <select class="title" name="contract">
                     <option value="sim">Sim</option>
                     <option value="não" selected>Não</option>
                 </select>
-            <!-- Datalist -->
-                <label class="title" for="genero:">Qual seu genero</label>
-                <input class="campo" type="text" list="gen" name="genero">
-                <datalist id="gen">
-                    <option value="Masculino"></option>
-                    <option value="Feminino"></option>
-                    <option value="Prefiro não declarar"></option>
-                    <option value="Outro:" ></option>
-                </datalist>
             </div>
-            <!-- radio buttom -->
-            <div class="check">
-                <label class="title" for="languagedev">Escolha a linguagem que você mais usa:</label>
-                <div class="radio">
-                    <input type="radio" value="javaScript" name="languagedev">
-                    <label for="javaScript">JavaScript</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" value="java" name="languagedev">
-                    <label for="java">Java</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" value="python" name="languagedev">
-                    <label for="python">Python</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" value="laravel" name="languagedev">
-                    <label for="laravel">Laravel</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" value="ruby" name="languagedev">
-                    <label for="ruby">Ruby</label>
-                </div>
-            </div>
-            <!-- checkbox -->
-            <div class="check">
-                <label class="title" for="work">Escolha as funções que mais domina:</label>
-                <div class="work">
-                    <input type="checkbox" value="front-end" name="work[]">
-                    <label for="front-end">Front-end</label>
-                </div>
-                <div class="work">
-                    <input type="checkbox" value="back-end" name="work[]">
-                    <label for="back-end">Back-end</label>
-                </div>
-                <div class="work">
-                    <input type="checkbox" value="full-stack" name="work[]">
-                    <label for="full-stack">Full-stack</label>
-                </div>
-                <div class="work">
-                    <input type="checkbox" value="engsystem" name="work[]">
-                    <label for="engsystem">Engenheiro de sistemas</label>
-                </div>
-            </div>
-            <!-- Number -->
-            <div class="check">
-                <label for="salary">Expectativa salárial:</label>
-                <input class="campo" type="number" name="salary" required>
-            </div>
-            <div class="check">
-                <label for="email-cadastro">Digite o email que deseja cadastrar</label>
-                <input style="min-width: 300px;" class="campo" type="email" name="email-cadastro" autocomplete="email" required>
-            </div>
-            <div class="check">
-                <label class="title" for="password">Digite sua senha:</label>
-                <input class="campo" type="password" name="password" required>
-            </div>
-            <div class="check">
-                <label for="image"><img id="icn-img" src="img/icon-img-white.png" alt="icone de imagem"> Insira a foto de um documento valido:</label>
-                <input type="file" name="image" class="campo" id="send-img">
-            </div>
-            <div>
-                <label for="avaliacao">Digite um número de 0 a 5 para avaliar o formulário</label>
-                <input style="text-align: center; width: 30px;" class="campo" type="number" value="5" name="value">
-            </div>
-            <!-- disable -->
-            <div>
-                <label for="confirm">Condições</label>
-                <p><small><span style="text-align: center; height: 20px; width: 363px; font: 0.5em sans-serif;">Ao enviar este formulário você concorda automaticamente em participar de uma entrevista."</span></small></p>
+            <!-- TERMOS -->
+            <div id="termos">
+                <label for="confirm">TERMOS</label>
+                <p><small><span>Ao enviar este formulário você concorda automaticamente em participar de uma entrevista."</span></small></p>
             </div>
             <!-- completar formulário -->
             <div class="check">
@@ -175,5 +106,26 @@
         </form>
     </div>
    <!-- Metodo "get" do form é utilizado para receber ou buscar dados -->
+   <footer id="contact-us">
+    <!--Footer Logo-->
+    <div class="footer-logo">
+        <p>
+            <a href="#inicio">
+                <img src="img/logotipo-white.png" alt="titanic-icon" />
+            </a>
+        </p>
+    </div>
+    <!--End Footer Logo-->
+    
+    <!-- SEGURANÇA -->
+    <p><small id="ocult">O sistema de segurança com o qual o navio é equipado - 16 compartimentos de estanques que impedidem a entrada de água caso alguma fratura ocorra no casco - <q>Nem Deus pode afundar esse navio!</q> - <span>Pres. J. Bruce Ismay</span>.</small></p>
+    <!-- SEGURANÇA -->
+    
+    <!-- Copyright -->
+    <p class="copyright">
+        &copy; 2024 <a><b class="color">Dev. Alan Marques</b></a>. Todos os direitos reservados.
+    </p>
+    <!-- Copyright -->
+</footer>
 </body>
 </html>
