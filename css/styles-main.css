@@ -1,7 +1,12 @@
+main {
+    background-color: rgb(39, 39, 39);
+    padding-top: 90px;
+    padding-bottom: 180px;
+}
+
 /* margrin */
 .container-margin {
     margin-top: 90px;
-    margin-bottom: 90px;
     margin-left: 40px ;
     margin-right: 40px ;
 }
@@ -57,7 +62,7 @@ ul.list-none {
     display: block;
     max-width: 400px;
     margin: 0px auto;
-    margin-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 #form ul {
@@ -73,7 +78,6 @@ ul.list-none {
     margin: 20px auto;
     padding: 0px 0px;
     text-align: center;
-    border: 1px solid #410606;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -92,7 +96,10 @@ ul.list-none {
     background-image: url("../img/decks.png");
     background-size: cover;
     background-position: center;
-    width: 100%;
+    transition: transform 0.5s;
+    transform: scale(1.2);
+    background-size: cover;
+    background-position: center;
     box-sizing: border-box;
 }
 
@@ -109,14 +116,16 @@ ul.list-none {
     width: 100%;
     height: 78px;
     box-sizing: border-box;
+    transition: transform 0.5s;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 #form ul .block li:hover {
+    background-color: rgba(0, 0, 0, 0.500);
     border: 1px solid #ddd;
     color: #ddd;
-    background-color: rgba(0, 0, 0, 0.792);
-    background-size: cover;
-    background-position: center;
     width: 100%;
     box-sizing: border-box;
 }

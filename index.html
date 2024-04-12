@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="css/body-styles.css">
 
 </head>
-<body>
+<body id="inicio">
     <!-- Cabeçalho -->
-    <header id="inicio">
+    <header id="nav-sobreposition">
         <!-- Barra de navegação pelo site -->
         <div class="nav-menu singlepage-nav">
             <div class="nav-menu-inner-top">
@@ -55,7 +55,7 @@
                 <h2 class="page-title"><span class="text-light" >Nem </span>Deus <span class="text-light" >pode afundar esse</span> Navio!</h2>
                 <p>"O <span class="citation">RMS Titanic</span> é considerado o maior e mais luxuoso navio de passageiros. A embarcação foi desenvolvida pela empresa <span class="citation">Harland & Wolff</span>, situada na cidade de Belfast, capital da Irlanda do Norte. O <span class="citation">RMS Titanic</span> pertence à classe Olympic, e foi encomendado pela companhia <span class="citation">White Star Line</span>, que cuidou também da sua condução. O responsável pelo projeto do <span class="citation">Titanic</span> foi o engenheiro e construtor <span class="citation">Thomas Andrews Jr. (1873-1912).</span></p>
                 <p>A construção do <span class="citation">Titanic</span> teve início no ano de 1909, no estaleiro <span class="citation">Harland & Wolff</span>, na Irlanda do Norte. Este navio está marcado pela sua grandiosidade e pelo luxo de nivel de ostentação.</p>
-                <span id="sobre"></span>
+                <span id="sobre"  style="position: absolute; top: 760px;"></span>
             </section>
             <!-- mais sobre -->
             <section class="section-padding">
@@ -80,18 +80,22 @@
                     <div class="block"><li><div class="dark">elevadores (quatro no total).</div></li></div>
                 </ul>
             </section>
-            
-            <!-- COMPRAS -->
-            <div id="embarque" id="buy-menu">
+        </div>
+    </main>
+    <!-- COMPRAS -->
+    <div id="buy-menu">
+        <span id="embarque" style="position: absolute; top: -70px;"></span>
+        <div id="bg-emb">
+            <div id="emb-scheet">
                 <h2 class="text-light" >Uma embarcação avaliada em 7,5 milhões de dólares. <span class="page-title">O luxo dos mares!</span></h2>
-                <h3 class="text-light" >A primeira viagem! <br>Partiremos em abril de 1912. <span class="page-title" >Garanta sua cabine!</span></h3>
+                <h3 class="text-light" >A primeira viagem! <br>Partiremos em 10 abril de 1912. <span class="page-title" >Garanta sua cabine!</span></h3>
                 <p class="buy-pass"><a href="form.html">Embarque já!</a></p>
             </div>
         </div>
-    </main>
+    </div>
     
     <!-- Rodapé -->
-    <footer id="contact-us">
+    <footer>
         <!--Footer Logo-->
         <div class="footer-logo">
             <p>
@@ -100,6 +104,23 @@
                 </a>
             </p>
         </div>
+        
+        <form id="contact-form">
+            <h2 id="contact-title">Contate-nos</h1> 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+    
+            <label for="cell-phone">Celular:</label>
+            <input type="tel" id="cell-phone" name="cell-phone">
+    
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name">
+    
+            <label for="message">Menssagem:</label>
+            <textarea id="message" name="message"></textarea>
+    
+            <button type="submit">Enviar solicitação de contato</button>
+        </form>
         <!--End Footer Logo-->
         
         <!-- SEGURANÇA -->
@@ -107,7 +128,7 @@
         <!-- SEGURANÇA -->
         
         <!-- Copyright -->
-        <p class="copyright">
+        <p id="contact-us" class="copyright">
             &copy; 2024 <a><b class="color">Dev. Alan Marques</b></a>. Todos os direitos reservados.
         </p>
         <!-- Copyright -->

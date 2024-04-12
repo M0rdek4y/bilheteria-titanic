@@ -21,14 +21,6 @@ body {
     margin-bottom: 40px;
 }
 
-h1 {
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: darkgray;
-    font-size: 3em; color: #fffdd9;
-    color: rgb(4, 126, 214);
-    -webkit-text-stroke: darkgray 2px;
-}
-
 header hr {
     width: 100%;
     height: 5px;
@@ -72,6 +64,11 @@ div label {
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .spaceline {
@@ -83,17 +80,85 @@ div label {
     padding-bottom: 20px;
 }
 
-#option-contract {
+#option-contract label {
+    display: block;
+    text-align: center;
     margin-bottom: 10px;
+}
+
+#option-contract select {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#option-contract select option {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#termos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:  20px;
+    background-color: #737373;
+    padding: 20px;
+    border-radius: 5px;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#termos label {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }
 
 #termos p {
     line-height: 0.5;
+    margin-top: 10px;
+    text-align: center;
 }
 
 #termos p small span {
+    color: #fff;
     text-align: center;
     height: 20px;
     width: 363px;
     font: 0.5em sans-serif;
+}
+
+.check input[type="reset"],
+.check input[type="submit"] {
+    display: block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #005a9c;
+    background-color: #005a9c;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: border 0.5, border-color 0.5;
+}
+
+.check input[type="reset"]:hover,
+.check input[type="submit"]:hover {
+    background-color: #00426d;
+    border: 2px solid #002a46;
+    border-radius: 5px;
+    transition: 0.5s;
 }

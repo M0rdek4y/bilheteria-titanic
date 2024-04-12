@@ -8,9 +8,17 @@ header {
     height: 70px;
 }
 
+#nav-sobreposition {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
 /* Navigation bar styles */
 
 .nav-menu {
+    z-index: 100;
     display: block;
     position: fixed;
     float: right;
@@ -60,6 +68,7 @@ header {
     border-color: #780514!important;
     border-radius: 10px!important;
     border-width: 2px!important;
+    transition: border-color 0.5s;
 }
 
 #nav-login:hover {
@@ -91,6 +100,32 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: "Raleway",sans-serif;
+    transition: color 0.7s;
+}
+
+.nav-menu ul.nav-menu-inner > li > a:hover {
+    color: #780514;
+    text-decoration: none;
+}
+
+.nav-menu ul.nav-menu-inner > li > a:visited {
+    box-sizing: border-box;
+    display: block;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    font-size: 13px;
+    line-height: 50px;
+    padding: 0px 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Raleway",sans-serif;
+    transition: color 0.7s;
+}
+
+.nav-menu ul.nav-menu-inner > li > a:visited:hover {
+    color: #780514;
+    text-decoration: none;
 }
 
 .nav-menu-icon.active a, .nav-menu-icon > a.active,
