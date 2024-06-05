@@ -8,6 +8,12 @@
     <!-- FAVICON -->
     <link rel="shortcut icon" href="img/titanic-icon.png" type="image/x-icon">
     
+    <!-- link icons google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles-menu.css">
     <link rel="stylesheet" href="css/styles-citation.css">
@@ -15,7 +21,11 @@
     <link rel="stylesheet" href="css/buymenu-styles.css">
     <link rel="stylesheet" href="css/footer-styles.css">
     <link rel="stylesheet" href="css/body-styles.css">
+    <link rel="stylesheet" href="css/dropdown-style.css">
 
+    <!-- script -->
+    <script src="js/dropdown-script.js"></script>
+    
 </head>
 <body id="inicio">
     <!-- Cabeçalho -->
@@ -25,17 +35,36 @@
             <div class="nav-menu-inner-top">
                 <p><img src="img/logotipo-white.png" alt="logotipo-titanic"></p>
                 <ul class="nav-menu-inner">
-                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#embarque" id="nav-login">Embarque</a></li>
                     <li><a href="#contact-us">Contato</a></li>
                 </ul>
             </div>
         </div>
+        
+        <div class="nav-menu-dropdown">
+            <!-- Ícone do menu -->
+            <div class="menu-icon">
+                <span class="material-symbols-outlined menu-icon-open">menu</span>
+                <span class="material-symbols-outlined menu-icon-close" style="display: none;">close</span>
+            </div>
+
+            
+            <!-- O menu dropdown -->
+            <div class="dropdown" id="dropdown">
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#inicio">Início</a></li>
+                    <li><a class="dropdown-item" href="#sobre">Sobre</a></li>
+                    <li><a class="dropdown-item" href="#embarque" id="nav-login">Embarque</a></li>
+                    <li><a class="dropdown-item" href="#contact-us">Contato</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    
-    <!-- O inicio -->
-    <main>
+        
+        <!-- O inicio -->
+        <main>
         <div class="bg-citation">
             <div class="citation-title">
                 <!-- Título do site -->

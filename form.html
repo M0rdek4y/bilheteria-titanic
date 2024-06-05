@@ -15,12 +15,15 @@
     <link rel="stylesheet" href="css/styles-form.css">
     <link rel="stylesheet" href="css/footer-styles.css">
     <link rel="stylesheet" href="css/body-form-styles.css">
-    <link rel="stylesheet" href="css/mobile-style.css">
+    <link rel="stylesheet" href="css/dropdown-style.css">
+
+    <!-- script -->
+    <script src="js/dropdown-script.js"></script>
+
 </head>
 <body>
-    <!-- primeiro formulario -->
-    <!-- Metodo "post utilizado para enviar dados para uma outra pasta" -->
-    <header id="inicio">
+    <!-- Cabeçalho -->
+    <header id="nav-sobreposition">
         <!-- Barra de navegação pelo site -->
         <div class="nav-menu singlepage-nav">
             <div class="nav-menu-inner-top">
@@ -31,7 +34,25 @@
                     <li><a href="index.html#embarque" id="nav-login">Embarque</a></li>
                     <li><a href="form.html#contact-us">Contato</a></li>
                 </ul>
-                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </div>
+        
+        <div class="nav-menu-dropdown">
+            <!-- Ícone do menu -->
+            <div class="menu-icon">
+                <span class="material-symbols-outlined menu-icon-open">menu</span>
+                <span class="material-symbols-outlined menu-icon-close" style="display: none;">close</span>
+            </div>
+
+            
+            <!-- O menu dropdown -->
+            <div class="dropdown" id="dropdown">
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="index.html#inicio">Início</a></li>
+                    <li><a class="dropdown-item" href="index.html#sobre">Sobre</a></li>
+                    <li><a class="dropdown-item" href="index.html#embarque" id="nav-login">Embarque</a></li>
+                    <li><a class="dropdown-item" href="index.html#contact-us">Contato</a></li>
+                </ul>
             </div>
         </div>
     </header>

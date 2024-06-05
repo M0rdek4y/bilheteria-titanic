@@ -9,8 +9,7 @@ body {
     background-image: url("../img/backview-titanic.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: -45%;
+    background-position: center 70px;
     position: relative;
     text-align: center;
     font-size: large;
@@ -18,7 +17,7 @@ body {
 }
 
 .all {
-    margin-bottom: 40px;
+    margin: 40px 0px;
 }
 
 header hr {
